@@ -128,10 +128,6 @@ struct
   include Conv.Make (D)
   include Eq.Make (D)
 
-  let eq = String.equal
-  let neq a b = not (eq a b)
-  let unsafe_compare = String.compare
-
   let get t =
     let t = Hash.dup t in
     unsafe_get t |> By.unsafe_to_string

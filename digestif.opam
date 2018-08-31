@@ -16,6 +16,7 @@ depends: [
   "jbuilder"       {build}
   "base-bytes"
   "base-bigarray"
+  "eqaf"
 ]
 
 available: [ ocaml-version >= "4.03.0" ]
